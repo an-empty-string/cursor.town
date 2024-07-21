@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: clip;
+        }
+        div#clicker {
+            cursor: url(assets/cursor2-black.png), pointer;
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        div#status {
+            z-index: 3;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 1em;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        div.c {
+            z-index: 1;
+            position: absolute;
+            display: inline-block;
+            min-width: 22px;
+            height: 38px;
+        }
+        div.client {
+            border: 1px solid gold;
+            padding: 3px;
+            background-color: gold;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div.c-black {
+            background-image: url(assets/cursor2-black.png);
+        }
+        div.c-red {
+            background-image: url(assets/cursor2-red.png);
+        }
+        div.c-green {
+            background-image: url(assets/cursor2-green.png);
+        }
+        div.c-blue {
+            background-image: url(assets/cursor2-blue.png);
+        }
+        </style>
+    </head>
+    <body>
+        <div id="status">
+            <span id="otherClients">0 other cursors</span> online<br />
+            <a href="https://tris.fyi">tris</a> made this
+        </div>
+        <div id="clicker"></div>
+        <script src="assets/cursortown.js"></script>
+    </body>
+</html>
